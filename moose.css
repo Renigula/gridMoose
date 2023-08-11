@@ -1,0 +1,44 @@
+
+body *{
+    box-sizing: border-box;
+}
+#grid-container{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 50px 30px 1fr 1fr 1fr;
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    gap: 8px;
+    border: solid;
+    
+    
+}
+h1{
+    grid-column: span 3;
+    background-color: red;
+    text-align: center;
+    margin: 0;
+}
+#grid-container *{
+    border: solid;
+}
+#home{
+    grid-column: 1/2;
+}
+
+#facts{
+    grid-column: 3/4 ;
+}
+#moosepic{
+    max-width: 300px;
+}
+#hiMyNameIs{
+    grid-column: span 2;
+}
+#moosesAre{
+    grid-column: span 2;
+}
+#ifIWere{
+    grid-column: span 1;
+}
